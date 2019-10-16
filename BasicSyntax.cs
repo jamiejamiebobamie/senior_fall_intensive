@@ -5,7 +5,7 @@ public class BasicSyntax : MonoBehaviour
 {
     void Start()
     {
-        Debug.Log(transform.position.x);
+        //Debug.Log(transform.position.x);
 
         if (transform.position.y <= 5f)
         {

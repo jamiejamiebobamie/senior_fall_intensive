@@ -3,7 +3,7 @@
 namespace UnityTemplateProjects
 {
 
-    public class colorChange : MonoBehaviour
+    public class ColorChange : MonoBehaviour
     {
         void Update()
         {
