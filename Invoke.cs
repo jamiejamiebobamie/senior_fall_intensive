@@ -18,7 +18,7 @@ public class Invoke : MonoBehaviour
          * the delay in seconds to wait before calling the function the first time
          * the delay between calls after first one.
          */
-        InvokeRepeating("PrintHey", 2,1)
+        InvokeRepeating("PrintHey", 2, 1);
 
         /* an empty CancelInvoke() cancels all functions
          * being called with Invoke and InvokeRepeating
