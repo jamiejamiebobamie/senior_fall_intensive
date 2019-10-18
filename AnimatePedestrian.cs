@@ -8,13 +8,16 @@ public class AnimatePedestrian : MonoBehaviour
 
     Animator anim;
 
+    // objects are used as waypoints in the walk cycle.
     [SerializeField] private GameObject object1;
     [SerializeField] private GameObject object2;
     [SerializeField] private GameObject object3;
     [SerializeField] private GameObject[] objects;
 
+    // how close the pedestrians get before saying they've gotten close enough.
     float dist = 3;
 
+    // note to self: look up this. '[SerializedField]' it is important.
     [SerializeField] private NavMeshAgent m_navMeshAgent;
     [SerializeField] private GameObject m_Target;
 
