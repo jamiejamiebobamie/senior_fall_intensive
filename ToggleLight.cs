@@ -18,7 +18,6 @@ public class ToggleLight : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             myLight.enabled = !myLight.enabled;
-        }
-        
+        }    
     }
 }
