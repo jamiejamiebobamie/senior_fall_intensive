@@ -7,15 +7,24 @@ public class InstantiateProjectile : MonoBehaviour
     public Rigidbody projectile;
     public Transform barrelEnd;
     public GameObject cameraRot;
+    bool fire = false;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.F))
+        fire = false;
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            fire = true;
+        }
+
+        if(fire)
         {
             Rigidbody projectileInstance;
-            projectileInstance = Instantiate(projectile, barrelEnd.position, cameraRot.transform.rotation) as Rigidbody;
-            projectileInstance.AddForce(barrelEnd.up * 350f);
+            projectileInstance = Instantiate(projectile, barrelEnd.position, transform.rotation) as Rigidbody;
+            projectileInstance.AddForce(barrelEnd.forward * 1350f);
+        }
+
         }
     }
-}
